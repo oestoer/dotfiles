@@ -1,0 +1,5 @@
+
+[include]
+  # For username / github token / etc
+  path = ~/.gitconfig.local
+

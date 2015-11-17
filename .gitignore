@@ -1,0 +1,8 @@
+# blacklist
+*
+
+# whitelist
+!README.md
+!.gitconfig
+!.gitignore
+!.vimrc
