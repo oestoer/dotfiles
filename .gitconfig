@@ -9,10 +9,6 @@
 [help]
 	autocorrect = 5
 
-[user]
-    name = Adam Ostor
-    email = adam.ostor@cognolink.com
-
 [color]
     ui = true
 
@@ -32,9 +28,4 @@
 
 [core]
     pager = bash -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
-
-#[pager]
-#    log = diff-highlight | less -r
-#    show = diff-highlight | less -r
-#    diff = diff-highlight | less -r
 
