@@ -1,5 +1,40 @@
 
 [include]
-  # For username / github token / etc
-  path = ~/.gitconfig.local
+    # For username / github token / etc
+    path = ~/.gitconfig.local
+
+[push]
+    default = simple
+
+[help]
+	autocorrect = 5
+
+[user]
+    name = Adam Ostor
+    email = adam.ostor@cognolink.com
+
+[color]
+    ui = true
+
+[alias]
+    br = branch
+    co = checkout
+    ci = commit
+    st = status
+    log25 = log --oneline --graph --decorate -25
+    l25 = log --oneline --graph --decorate -25
+    cb = checkout -b
+    sh = stash
+    shp = stash pop
+    shl = stash list
+    ro = remote update origin -p
+    lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[core]
+    pager = bash -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
+
+#[pager]
+#    log = diff-highlight | less -r
+#    show = diff-highlight | less -r
+#    diff = diff-highlight | less -r
 

@@ -6,3 +6,9 @@
 !.gitconfig
 !.gitignore
 !.vimrc
+!.bashrc
+!.bash_profile
+!.bash_prompt
+!.exports
+!.aliases
+!.functions
