@@ -12,3 +12,7 @@
 !.exports
 !.aliases
 !.functions
+!.dircolors
+!setup.sh
+!.vim/
+!.vim/*
