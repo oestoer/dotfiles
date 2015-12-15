@@ -13,7 +13,8 @@
 !.aliases
 !.functions
 !.dircolors
-!setup.sh
+!.setup.sh
 !.vim/
 !.vim/*
 !show-time.sh
+
