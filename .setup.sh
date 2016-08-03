@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install --yes git 
+apt-get install --yes git indicator-cpufreq indicator-multiload
 
 ln -sf /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
