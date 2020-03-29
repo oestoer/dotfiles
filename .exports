@@ -1,3 +1,4 @@
 # vim as default
 export EDITOR="vim"
-
+export GOPATH=$HOME/dev/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin

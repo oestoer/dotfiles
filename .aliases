@@ -10,5 +10,11 @@ alias gti=git # typo
 
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-alias gitpurge='git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d'
+# alias gitpurge='git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d'
+alias gitpurge='git br -v | grep "\[gone\]" | sed -e 's/..........gone.*//' | xargs git br -D'
+alias gitpu='git br -v | grep "\[gone\]"'
+
+alias dclenup='docker container rm --force `docker ps -aq`'
+alias d=docker
+alias cat=bat
 
