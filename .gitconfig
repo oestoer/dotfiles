@@ -25,6 +25,9 @@
     shl = stash list
     ro = remote update origin -p
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    tag = tag -s
+    # e.g: git change-commits GIT_COMMITTER_NAME "old name" "new name"
+    change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" \$@; }; f"
 
 [core]
     pager = bash -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
