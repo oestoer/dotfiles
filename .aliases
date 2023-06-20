@@ -12,3 +12,6 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 alias gitpurge='git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d'
 
+
+
+
