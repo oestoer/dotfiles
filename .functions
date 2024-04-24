@@ -19,3 +19,19 @@ function strip_diff_leading_symbols(){
 rule () {
     printf "%$(tput cols)s\n"|tr " " "="
 }
+
+function git_default_branch() {
+  if [ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1; then
+    default_branch=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
+    echo $default_branch
+  fi
+}
+
+git_rebase_main_func() {
+  stash_output=$(git stash)
+  git checkout $(git_default_branch)
+  git pull -p
+  git checkout -
+  git rebase $(git_default_branch)
+  [[ $stash_output != 'No local changes to save' ]] && git stash pop || true
+}
