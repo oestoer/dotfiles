@@ -2,6 +2,14 @@
 [include]
     # For username / github token / etc
     path = ~/.gitconfig.local
+# content for .local
+# [user]
+#     name = ""
+#     email = ""
+#     signingKey = #path to .pub key
+#
+# [gpg]
+#     format = ssh
 
 [push]
     default = simple
@@ -15,7 +23,7 @@
 [alias]
     br = branch
     co = checkout
-    ci = commit
+    ci = commit -S
     st = status
     log25 = log --oneline --graph --decorate -25
     l25 = log --oneline --graph --decorate -25
