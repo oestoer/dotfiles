@@ -31,4 +31,4 @@
 
 [core]
     pager = bash -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
-
+    excludesfile = ~/.gitignore_global # assumes file is in user's home
