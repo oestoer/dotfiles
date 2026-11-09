@@ -16,4 +16,4 @@ alias gitpurge='git branch --merged | grep -v "\*" | grep -v "master" | xargs -n
 
 
 alias git-rebase-main=git_rebase_main_func # defined in .functions
-alias git-go-main="git pull -p; git checkout $(git_default_branch); git pull -p" # defined in .functions
+alias git-go-main=git_go_main_func # defined in .functions
