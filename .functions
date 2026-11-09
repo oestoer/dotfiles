@@ -36,4 +36,4 @@ git_rebase_main_func() {
   [[ $stash_output != 'No local changes to save' ]] && git stash pop || true
 }
 
-git-go-main_func() { git pull -p; git checkout "$(git_default_branch)"; git pull -p; }
+git_go_main_func() { git pull -p; git checkout "$(git_default_branch)"; git pull -p; }
